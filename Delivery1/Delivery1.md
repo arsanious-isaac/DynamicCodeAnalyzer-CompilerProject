@@ -1,14 +1,14 @@
 # Delivery 1 
-- [x] Github repository creation
-  ![Repository QR Code](https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/9ff96d6eae31764d39bc7a5f1d6ff21093b7ef68/Delivery1/repo-qr-code.png)
+## - [x] Github repository creation
+  ![Repository QR Code](https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/29d7ccda243cebb76c896872c9171a2abd8f4892/Delivery1/repo-qr-code.png)
   
-- [x] ANTLR Java Lexer & Parser used
+## - [x] ANTLR Java Lexer & Parser used
   - Credits to https://github.com/antlr/grammars-v4/tree/master/java/java
     - Java Lexer (https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/main/JavaLexer.g4)
     - Java Parser (https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/main/JavaParser.g4)
   
-- [x] Testing the grammar & showing the parse tree using ANTLR with Intelli-J
-  - ****Simple If condition program that states Success/Failure for a certain grade
+## - [x] Testing the grammar & showing the parse tree using ANTLR with Intelli-J
+   ### - Simple If condition program that states Success/Failure for a certain grade
     ```
        public class IfCond {
         public static void main(String[] args) {
@@ -23,11 +23,11 @@
     }
     ```
     
-    __If condition Parse Tree
+   __If condition Parse Tree__
      - ![If condition test](https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/4415d9383c010d8b1f468a8279a206429e6343ad/Delivery1/test-ifcond.png)
      - ![If condition Parse Tree](https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/f636bf47fb7fd3762b5fd72887ca8aa81e6416ad/Delivery1/parseTree%20--Ifcondition.png)
 
-   - ****Simple While loop that prints value of variable k of type integer while it's less than or equal to 10 
+   ### - Simple While loop that prints value of variable k of type integer while it's less than or equal to 10 
     ```
     public class WhileLoop {
     public static void main(String[] args) {
@@ -38,7 +38,7 @@
     }
     }
     ```
-    __While loop Parse Tree
+   __While loop Parse Tree__
       - ![While loop test](https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/4415d9383c010d8b1f468a8279a206429e6343ad/Delivery1/test-whileloop.png)
       - ![While loop Parse Tree](https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/4415d9383c010d8b1f468a8279a206429e6343ad/Delivery1/parseTree--whileloop.png)
       - ![While loop fault test](https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/4415d9383c010d8b1f468a8279a206429e6343ad/Delivery1/test-whileloopfault.png)

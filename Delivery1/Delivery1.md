@@ -1,13 +1,12 @@
-# Delivery 1 (18/3 —> 24/3)
-----------------------------
+# Delivery 1 
 - [x] Github repository creation
-  ![Repository QR Code](/assets/images/repo-qr-code.png)
+  ![Repository QR Code](/assets/images/Delivery1/repo-qr-code.png)
   
 - [x] ANTLR Java Lexer & Parser used
-  Credits to https://github.com/antlr/grammars-v4/tree/master/java/java
+  - Credits to https://github.com/antlr/grammars-v4/tree/master/java/java
     - Java Lexer (https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/main/JavaLexer.g4)
     - Java Parser (https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/main/JavaParser.g4)
-    - 
+  
 - [x] Testing the grammar & showing the parse tree using ANTLR with Intelli-J
 
 - [ ] Starting rule of the grammar

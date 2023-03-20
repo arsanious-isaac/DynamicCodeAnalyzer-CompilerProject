@@ -1,6 +1,6 @@
 # Delivery 1 
 - [x] Github repository creation
-  ![Repository QR Code](/assets/images/Delivery1/repo-qr-code.png)
+  ![Repository QR Code](Delivery1/repo-qr-code.png)
   
 - [x] ANTLR Java Lexer & Parser used
   - Credits to https://github.com/antlr/grammars-v4/tree/master/java/java

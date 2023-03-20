@@ -4,7 +4,6 @@
 
 ![Repository QR Code](https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/29d7ccda243cebb76c896872c9171a2abd8f4892/Delivery1/repo-qr-code.png)
     
-    ---------------------------------------------------
 
 - [x] ANTLR Java Lexer & Parser used
   - Credits to https://github.com/antlr/grammars-v4/tree/master/java/java

@@ -64,6 +64,8 @@
     String Operation Parse Tree
       
      ![Stribg Operation test](https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/main/Delivery1/Code%2BParseTree-StringOperation.png)
+         
+     ![Stribg Operation test](https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/main/Delivery1/parseTree--StringOperations.png)
      
   
   

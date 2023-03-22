@@ -6,7 +6,7 @@
     
 
 - [x] ANTLR Java Lexer & Parser used
-  - Credits to https://github.com/antlr/grammars-v4/tree/master/java/java 
+  - Credits to https://github.com/antlr/grammars-v4/tree/master/java/java
     - Java Lexer (https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/main/JavaLexer.g4)
     - Java Parser (https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/main/JavaParser.g4)
     ---------------------------------------------------

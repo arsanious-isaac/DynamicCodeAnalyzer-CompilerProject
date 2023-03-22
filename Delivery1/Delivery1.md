@@ -61,6 +61,12 @@
      ![While loop fault Parse Tree](https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/392862f1ec731e4dd1d90bc6c463213d5d79b394/Delivery1/parseTree-whileloopfault.png)
   ---------------------------------------------------
   
+    String Operation Parse Tree
+      
+     ![Stribg Operation test](https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/4415d9383c010d8b1f468a8279a206429e6343ad/Delivery1/Code+ParseTree-StringOperation.png)
+     
+  
+  
 - [ ] Starting rule of the grammar
 
 - [ ] A Java program based on Antlr that takes a java file as an input and outputs a modified intermediate java file (injected code):

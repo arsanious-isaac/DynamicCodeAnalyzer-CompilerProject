@@ -16,26 +16,23 @@ public class DynamicCodeAnalyzer extends JavaParserBaseListener {
 
 
     @Override public void enterBlock(JavaParser.BlockContext ctx) {
-        int i = ctx.getStart().getTokenIndex();
-        rewriter.insertAfter(i,"//block " + counter);
+        int start = ctx.getStart().getTokenIndex();
+        rewriter.insertAfter(start,"//block " + (counter+1));
+
+
         if (counter==0){
-
-            int start = ctx.getStart().getTokenIndex();
-            rewriter.insertAfter(start,"\n int[] intArray = new int[20]; \n");
-
-
+            rewriter.insertAfter(start,"\n int[] intArray = new int[20]; \n" + "int c = 0; \n");
             int end = ctx.getStop().getTokenIndex();
             rewriter.insertBefore(end,
                     "\n PrintWriter out = new PrintWriter(\"output2.txt\");\n" +
-                    " for(int i=1 ; i< 20; i++){\n" +
-                    "     if (intArray[i] == 1)\n" +
-                    "        out.println(\"block#\"+ (i-1));\n" +
+                    " for(int i=0 ; i < c; i++){\n" +
+                    "        out.println(\"block #\"+ intArray[i] + \" is visited\");\n" +
                     " }\n" +
                     "        out.close();\n");
 
         }
         counter++;
-        rewriter.insertAfter(i, "\n\t\t intArray ["+counter+"] =1;");
+        rewriter.insertAfter(start, "\n\t\t intArray [c++] ="+ counter + ";");
 
     }
 

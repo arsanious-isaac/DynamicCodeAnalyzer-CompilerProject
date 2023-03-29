@@ -15,8 +15,6 @@ A dynamic code analyzer for Java Language to generate statement and branches cod
 
 <details>
   <summary> ✓ Delivery 1 </summary>
-  # Delivery 1 #
-
 - [x] Github repository creation
 
 ![Repository QR Code](https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/29d7ccda243cebb76c896872c9171a2abd8f4892/Delivery1/repo-qr-code.png)
@@ -86,8 +84,8 @@ A dynamic code analyzer for Java Language to generate statement and branches cod
      
   
   
-- [x] Starting rule of the grammar
-      compilationUnit
+- [x] Starting rule of the grammar:
+      ****compilationUnit****
 
 - [x] A Java program based on Antlr that takes a java file as an input and outputs a modified intermediate java file (injected code):
 a comment is added in each code block indicating the block number

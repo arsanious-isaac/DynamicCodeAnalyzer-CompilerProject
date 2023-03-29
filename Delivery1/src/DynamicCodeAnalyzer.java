@@ -13,23 +13,8 @@ public class DynamicCodeAnalyzer extends JavaParserBaseListener {
         rewriter = new TokenStreamRewriter(tokens);
     }
 
-
-
     @Override public void enterBlock(JavaParser.BlockContext ctx) {
         int start = ctx.getStart().getTokenIndex();
         rewriter.insertAfter(start,"//block " + (counter+1));
-
-
     }
-
-
-
-
-
 }
-
-
-
-
-
-

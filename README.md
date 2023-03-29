@@ -10,9 +10,11 @@ A dynamic code analyzer for Java Language to generate statement and branches cod
 
 <details>
   <summary> ✓ Delivery 1 </summary>
+  
+  
 - [x] Github repository creation
 
-![Repository QR Code](https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/29d7ccda243cebb76c896872c9171a2abd8f4892/Delivery1/repo-qr-code.png)
+    ![Repository QR Code](https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/29d7ccda243cebb76c896872c9171a2abd8f4892/Delivery1/repo-qr-code.png)
     
 
 - [x] ANTLR Java Lexer & Parser used
@@ -91,6 +93,7 @@ a comment is added in each code block indicating the block number
 
 <details>
   <summary> ✓ Delivery 2 </summary>
+  
   - [x]A Java program based on Antlr that takes a java code (input.txt) and injects code into it, generating a modified java file (output1.java). When (output1.java) is run, the visited blocks from this code are detected and stated in a text file (output2.txt).
 
   ![output](https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/blob/ebebd2c66531984decaf52e690506bef560d0b8e/Delivery2/Screen%20Shot%202023-03-29%20at%206.09.42%20PM.png)

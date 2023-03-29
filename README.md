@@ -96,7 +96,8 @@ a comment is added in each code block indicating the block number
   ![output](https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/blob/ebebd2c66531984decaf52e690506bef560d0b8e/Delivery2/Screen%20Shot%202023-03-29%20at%206.09.42%20PM.png)
 
  ![injected output VS. visited blocks](https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/blob/ebebd2c66531984decaf52e690506bef560d0b8e/Delivery2/Screen%20Shot%202023-03-29%20at%206.18.47%20PM.png)
- 
+ </details>
+
 
 <details>
   <summary> Delivery 3 </summary>

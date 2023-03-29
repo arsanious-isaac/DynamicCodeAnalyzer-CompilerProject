@@ -20,20 +20,6 @@ public class DynamicCodeAnalyzer extends JavaParserBaseListener {
         rewriter.insertAfter(start,"//block " + (counter+1));
 
 
-//        if (counter==0){
-//            rewriter.insertAfter(start,"\n int[] intArray = new int[20]; \n" + "int c = 0; \n");
-//            int end = ctx.getStop().getTokenIndex();
-//            rewriter.insertBefore(end,
-//                    "\n PrintWriter out = new PrintWriter(\"output2.txt\");\n" +
-//                    " for(int i=0 ; i < c; i++){\n" +
-//                    "        out.println(\"block #\"+ intArray[i] + \" is visited\");\n" +
-//                    " }\n" +
-//                    "        out.close();\n");
-//
-//        }
-//        counter++;
-//        rewriter.insertAfter(start, "\n\t\t intArray [c++] ="+ counter + ";");
-
     }
 
 

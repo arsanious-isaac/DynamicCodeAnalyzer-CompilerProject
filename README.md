@@ -8,11 +8,6 @@ A dynamic code analyzer for Java Language to generate statement and branches cod
 - [Mina Nagy Latif](https://github.com/MinaNagyLatif)
 - [Youssef Nazeer Tawfik](https://github.com/Yousef-nazeer)
 
-### References
-- https://stackoverflow.com/questions/14519416/a-difference-between-statement-and-decision-coverage#:~:text=Statement
-- https://github.com/antlr/intellij-plugin-v4
-- https://github.com/antlr/grammars-v4/tree/master/java/java
-
 <details>
   <summary> ✓ Delivery 1 </summary>
 - [x] Github repository creation
@@ -101,3 +96,8 @@ a comment is added in each code block indicating the block number
 <details>
   <summary> Delivery 3 </summary>
 </details>
+  
+  ### References
+- https://stackoverflow.com/questions/14519416/a-difference-between-statement-and-decision-coverage#:~:text=Statement
+- https://github.com/antlr/intellij-plugin-v4
+- https://github.com/antlr/grammars-v4/tree/master/java/java

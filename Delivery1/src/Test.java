@@ -2,16 +2,11 @@ import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.*;
 import java.io.*;
-import java.io.File;  // Import the File class
+import java.io.File;  
 
 public class Test {
     public static void main(String[] args) throws IOException {
-//      System.out.print("Enter Java file path: ");
-//      Scanner sc = new Scanner(System.in);
-//      String fileName = sc.nextLine();
-//      File file = new File(fileName);
-//      FileInputStream fis = null;
-//      fis = new FileInputStream(file);
+
         CharStream input = CharStreams.fromFileName("input.txt");
         JavaLexer lexer = new JavaLexer(input);
         CommonTokenStream tokens = new CommonTokenStream(lexer);

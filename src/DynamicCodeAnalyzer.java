@@ -6,11 +6,26 @@ import java.util.HashMap;
 public class DynamicCodeAnalyzer extends JavaParserBaseListener {
 
     TokenStreamRewriter rewriter;
+    TokenStreamRewriter rewriter2;
     int counter = 0;
+    StringBuilder build = new StringBuilder("");
 
     public DynamicCodeAnalyzer(CommonTokenStream tokens) {
-
         rewriter = new TokenStreamRewriter(tokens);
+        rewriter2 = new TokenStreamRewriter(tokens);
+    }
+
+    @Override
+    public void enterCompilationUnit(JavaParser.CompilationUnitContext ctx) {
+        rewriter.insertBefore(ctx.getStart().getTokenIndex(),
+                " import java.io.PrintWriter;\n" + "import java.io.FileNotFoundException;\n");
+    }
+
+    @Override
+    public void enterClassBody(JavaParser.ClassBodyContext ctx) {
+        rewriter.insertAfter(ctx.getStart().getTokenIndex(),
+                "\nprivate static PrintWriter blocks;\n" +
+                    "    private static PrintWriter branches;\n");
     }
 
 

@@ -52,7 +52,17 @@ public class DynamicCodeAnalyzer extends JavaParserBaseListener {
     }
 
 
-
+@Override
+    public void enterForStatement(JavaParser.ForStatementContext ctx) {
+        if(ctx.getChild(4).getText().charAt(0) != '{'){
+            counter++;
+            rewriter.insertBefore(ctx.statement().getStart(),
+                    "{//block " + (counter) + "\n\t\t blocks.println(\"block #" + counter + " is visited\");\n");
+            rewriter.insertAfter(ctx.statement().getStop(),"}");
+            rewriter2.insertBefore(ctx.statement().getStart(), "{//block " + (counter) + "\n\t\t");
+            rewriter2.insertAfter(ctx.statement().getStop(),"}");
+        }
+    }
 
 
 }

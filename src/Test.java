@@ -23,5 +23,21 @@ public class Test {
         FileWriter FW = new FileWriter("output1.java");
         FW.write(myListner.rewriter.getText().replace("input", "output1"));
         FW.close();
+        
+          //compile and run java code automatic
+        Process theProcess = null;
+        JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
+        compiler.run(null, null, null, fileObjOutput.getPath());
+        try {
+            theProcess = Runtime.getRuntime().exec("java javaoutput/" + fileObjOutput.getName());
+        } catch (IOException e) {
+            System.err.println("Error on exec() method");
+            e.printStackTrace();
+        }
+        Thread.sleep(4000);
+        ////////////////////
+        
+        
+        
     }
 }

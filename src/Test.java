@@ -94,7 +94,19 @@ public class Test {
 
 
         }
-    
+        reader.close();
+
+        File newHtmlFile = new File("html/output1.html");
+        // replace our code in the html body
+        File htmlTemplateFile = new File("html/template.html");
+        String htmlString = FileUtils.readFileToString(htmlTemplateFile);
+        htmlString = htmlString.replace("$body", sb.toString());
+        htmlString = htmlString.replace("$li", "href=\"style1.css\"");
+        FileUtils.writeStringToFile(newHtmlFile, htmlString);
+        ////////////////////////////////////////////////////////////////
+
+    }
+
     
     
     

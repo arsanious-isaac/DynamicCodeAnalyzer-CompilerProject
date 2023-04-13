@@ -5,6 +5,12 @@ import java.io.*;
 import java.io.File;  // Import the File class
 
 public class Test {
+    
+   
+    static String s = "";
+    
+    static List<Integer> list_color = new ArrayList<>();
+
     public static void main(String[] args) throws IOException {
 //      System.out.print("Enter Java file path: ");
 //      Scanner sc = new Scanner(System.in);
@@ -37,6 +43,23 @@ public class Test {
         Thread.sleep(4000);
         ////////////////////
         
+        
+        
+    static void genNumbers(String fileName, int j) throws IOException {
+        CharStream in = CharStreams.fromFileName("textoutput/" + fileName);
+        String text = in.toString();
+        list_color.clear();
+        // extract the numbers from the text file to the array list_color
+        String pattern = "\\d+"; // Matches one or more digits
+        Pattern r = Pattern.compile(pattern);
+        Matcher m = r.matcher(text);
+        while (m.find()) {
+            list_color.add(Integer.parseInt(m.group()));
+        }
+        System.out.println(list_color);
+        ////////////////////////
+    
+    }
         
         
     }

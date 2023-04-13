@@ -64,6 +64,41 @@ public class DynamicCodeAnalyzer extends JavaParserBaseListener {
         }
     }
 
+   @Override
+    public void enterIfStatement(JavaParser.IfStatementContext ctx) {
+
+        // check if there is branch then append the build
+        char[] character = ctx.parExpression().getText().toCharArray(); // get "(x<3 || y < 5)" into characters array [(, x , < , 3.......]
+        build.append("for(int i = 0; i != 1 ;){\n\t\t if (");
+
+        if(ctx.parExpression().getText().contains("|")){
+            for (int i = 1; i < character.length-1; i++) {
+
+                if (character[i] == '|') {
+                    build.append(") i = 1; \n\t\t if(i==1)branches.println(\"branch of block #" + (counter+1) + " is not covered\"); else if (");
+                    i += 1;continue;}
+
+                build.append(character[i]);
+
+                if(i == character.length-2)
+                    build.append(") i = 1;\n\t}");
+            };
+        }
+        else build.setLength(0);
+        //block comment and brackets
+        if(ctx.getChild(2).getText().charAt(0) != '{') {
+            counter++;
+            rewriter.insertBefore(ctx.statement(0).getStart(),
+                    "{//block " + (counter) + "\n\t\t " + build.toString() + "\n\t\t blocks.println(\"block #" + counter + " is visited\");\n");
+            rewriter.insertAfter(ctx.statement(0).getStop(), "}");
+            rewriter2.insertBefore(ctx.statement(0).getStart(), "{//block " + (counter)+ "\n\t\t");
+            rewriter2.insertAfter(ctx.statement(0).getStop(), "}");
+        }
+        else rewriter.insertAfter(ctx.statement(0).getStart(), "\n\t\t" + build.toString() + "\n\t\t");
+
+        }
+    
+    
 
 }
 

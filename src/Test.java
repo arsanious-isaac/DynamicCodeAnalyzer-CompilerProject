@@ -40,4 +40,40 @@ public class Test {
         
         
     }
+    static void genHtml(String code) throws IOException {
+
+        String line;
+        StringBuilder sb = new StringBuilder();
+        BufferedReader reader = new BufferedReader(new StringReader(code));
+        Pattern pattern = Pattern.compile("block" + "\\D*(\\d+)");
+
+        while ((line = reader.readLine()) != null) {
+            Matcher matcher = pattern.matcher(line);
+
+
+            if (line.contains("{")) {
+                if(matcher.find()) {        // there is "block i"   in the line
+                    String numberString = matcher.group(1);
+                    int number = Integer.parseInt(numberString); // get i to the number
+                    line = "<div id=\"b" + number + "\"" + ">" + line;  // <div id=b i> block i
+                    if(line.contains("|")){
+                        line = line.replace("(","(<span id = \"c" + number +"\"" +">");
+                        line = line.replace(")","</span>)");
+                    };
+
+                } else line = "<div>" + line;
+            }
+            if (line.contains("}")) {
+                line = line + "</div>";
+            }
+
+            sb.append(line + System.lineSeparator());
+
+
+        }
+    
+    
+    
+    
+    
 }

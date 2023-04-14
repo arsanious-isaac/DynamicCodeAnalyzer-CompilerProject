@@ -39,7 +39,8 @@ public class Test {
         ParseTreeWalker walker = new ParseTreeWalker();
         DynamicCodeAnalyzer myListner = new DynamicCodeAnalyzer(tokens);
         walker.walk(myListner, tree); // initiate walk of tree with listener
-        FileWriter FW = new FileWriter("output1.java");
+        File fileObjOutput = new File("javaoutput/output1.java");
+        FileWriter FW = new FileWriter("javaoutput/output1.java");
         FW.write(myListner.rewriter.getText().replace("input", "output1"));
         FW.close();
         
@@ -61,6 +62,19 @@ public class Test {
         blockcount = 0;
         while (matcher.find()) blockcount++;
         System.out.println("block count" + blockcount);
+        
+        
+
+        genHtml(myListner.rewriter2.getText());
+
+
+        // add the css lines to the Css string "s"
+        genNumbers("output1blocks.txt", 1);
+        genNumbers("output1branches.txt", 0);
+        File cssFile = new File("html/style1.css");
+        FileUtils.writeStringToFile(cssFile, s);
+        //////////////////////////////////////////
+    }
         
     static void genNumbers(String fileName, int j) throws IOException {
         CharStream in = CharStreams.fromFileName("textoutput/" + fileName);
@@ -89,8 +103,7 @@ public class Test {
     
     }
         
-        
-    }
+     
     static void genHtml(String code) throws IOException {
 
         String line;

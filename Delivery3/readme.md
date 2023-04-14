@@ -9,6 +9,11 @@
     <img src="https://img.shields.io/badge/last%20commit-april%202023-blue" alt="last update" />
   </a>
   </p>
+
+</div>
+
+## Team Members
+<div align="center">
   <p>
     <a href="https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/graphs/contributors">
       <img src="https://contrib.rocks/image?repo=Clara-Raef/DynamicCodeAnalyzer-CompilerProject" />
@@ -16,7 +21,6 @@
   </p>
 </div>
 
-## Team Members
 - [Arsanious Isaac Helmy](https://github.com/arsanious-isaac)
 - [Clara Raef Nasry](https://github.com/Clara-Raef)
 - [Mark Magdy Amin](https://github.com/markmagdy822000)
@@ -168,9 +172,15 @@ a comment is added in each code block indicating the block number
 <details>
   <summary>✓ Delivery3</summary>
   
-  - [] Generate an HTML where red-highlighted code blocks are the ones that have not been visited and the green-highlighted code blocks are the ones that have been visited
-  - [] Automated pipeline
-  - [] Branch coverage report 
-  - [] 3 Java code examples
+  - [x] Generate an HTML where red-highlighted code blocks are the ones that have not been visited and the green-highlighted code blocks are the ones that have been visited
+
+  - [x] Automated pipeline
+  - [x] Branch coverage report 
+  - [x] Testing diverse code cases
 
 </details>
+
+  ### References
+- https://stackoverflow.com/questions/14519416/a-difference-between-statement-and-decision-coverage#:~:text=Statement
+- https://github.com/antlr/intellij-plugin-v4
+- https://github.com/antlr/grammars-v4/tree/master/java/java

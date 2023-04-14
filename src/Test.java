@@ -57,8 +57,7 @@ public class Test {
             list_color.add(Integer.parseInt(m.group()));
         }
         System.out.println(list_color);
-        ////////////////////////
-        
+   
         // add Css line contains the color and the number of the block to public string called "s"
         for(int i = 1; i <= blockcount; i++){
             if(!list_color.contains(i) && j == 1 ){
@@ -70,7 +69,6 @@ public class Test {
         }
 
         System.out.println(s);
-        ////////////////////////////////
     
     }
         

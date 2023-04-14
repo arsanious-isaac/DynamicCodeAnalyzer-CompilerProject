@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>compiler</title>
+  <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body style="background-color : LimeGreen;"><pre><div>class main {
+<div id="b1">  public static void main(String[] args) {//block 1
+    int x = 0;
+    int y = 0;
+<div id="b2">    if(<span id = "c2">x == 0 || y == 1 || y == 5</span>){//block 2
+      y = 10;
+    }</div>
+<div id="b3">    else {//block 3
+<div id="b4">      if(true){//block 4
+        x++;
+      }</div>
+    }</div>
+<div id="b5">    for(int i = 0; i<3 ; i++) {//block 5
+		x++;}</div>
+<div id="b6">    while(y < 5) {//block 6
+		y = 5;}</div>
+<div id="b7">    while(<span id = "c7">y < 3 || y < 5</span>) {//block 7
+		y = 4;}</div>
+<div id="b8">    if(true){//block 8
+      y++;
+    }</div>
+<div>    int a[] = {1,2,3};</div>
+<div id="b9">    for (int i = 0 ; i<4 ;i++){//block 9
+    }</div>
+<div id="b10">    {//block 10
+    int z;
+  }</div>
+  }</div>
+}</div>
+</pre>
+</body>	
+</html>

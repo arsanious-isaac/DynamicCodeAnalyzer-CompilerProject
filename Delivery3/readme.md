@@ -37,65 +37,36 @@ if(a || b || (c && d && !e)) {
 _100% branch coverage => 100% statement coverage, while 100% statement coverage does not imply 100% branch coverage_
 
 ## System Flow
-<div align="center">
-  <p>
-      <img src="https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/blob/a37dbdb7e06cc7c6f18c848b9164ab0bd0ac0dea/Delivery3/flowchart.png" />
-  </p>
+<div align="center"> 
+  <img src="https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/blob/57ad60a07941017c39a13010ccb60323dc8317bd/Delivery3/flow.jpeg" />
 </div>
 
 ## :gear: Built With
-*Java
-*IntelliJ
-*ANTLR plug-in
-*CSS & HTML
+- Java
+- IntelliJ
+- ANTLR plug-in
+- CSS & HTML
 
 
 ## :compass: Roadmap
+<details>
+  <summary>✓ Delivery 1</summary>
+</details>
 
-* [x] Delivery 1
-* [x] Delivery 2
-* [x] Delivery 3
+<details>
+  <summary>✓ Delivery 2</summary>
+</details>
 
-
-### :camera: Screenshots
+<details>
+  <summary>✓ Delivery3</summary>
+  
+  ### :camera: Screenshots
 
 <div align="center"> 
-  <img src="https://placehold.co/600x400?text=Your+Screenshot+here" alt="screenshot" />
+  <img src="" />
 </div>
 
-
-
-<!-- Installation -->
-###  Installation
-
-Install my-project with npm
-
-```bash
-  yarn install my-project
-  cd my-project
-```
    
-<!-- Running Tests -->
 ### :test_tube: Running Tests
 
-To run tests, run the following command
-
-```bash
-  yarn test test
-```
-
-
-
-<!-- Usage -->
-## :eyes: Usage
-
-Use this space to tell a little more about your project and how it can be used. Show additional screenshots, code samples, demos or link to other resources.
-
-
-```javascript
-import Component from 'my-project'
-
-function App() {
-  return <Component />
-}
-```
+</details>

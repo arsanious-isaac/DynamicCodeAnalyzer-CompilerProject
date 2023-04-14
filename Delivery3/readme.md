@@ -166,16 +166,63 @@ a comment is added in each code block indicating the block number
  <img src="https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/blob/ebebd2c66531984decaf52e690506bef560d0b8e/Delivery2/Screen%20Shot%202023-03-29%20at%206.18.47%20PM.png"/>
   </div>
   
- </details>
 </details>
+
 
 <details>
   <summary>✓ Delivery3</summary>
   
   - [x] Generate an HTML where red-highlighted code blocks are the ones that have not been visited and the green-highlighted code blocks are the ones that have been visited
+  - [x] Branch coverage report: note the highlighted ```x == 0 || y == 1 || y == 5``` in red
 
+  ### :test_tube: Test 1
+  
+  ```
+      class main {
+      public static void main(String[] args) {
+        int x = 0;
+        int y = 0;
+        if(x == 0 || y == 1 || y == 5){
+          y = 10;
+        }
+        else {
+          if(true){
+            x++;
+          }
+        }
+        for(int i = 0; i<3 ; i++) x++;
+        while(y < 5) y = 5;
+        while(y < 3 || y < 5) y = 4;
+        if(true){
+          y++;
+        }
+        int a[] = {1,2,3};
+        for (int i = 0 ; i<4 ;i++){
+        }
+        {
+        int z;
+      }
+      }
+    }
+  ```
+  
+  <h3> :camera: Output HTML </h3>
+  <div align="center">
+ <img src="https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/blob/569ad8878b5300d0c88d9d7263e73a173c64ce7f/Delivery3/Test%201/html1.png"/>
+  </div>
+  
+  <h3> :camera: Input code, Output modified code, text files containing the indeces of covered blocks & branches </h3>
+  <div align="center">
+ <img src="https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/blob/ebebd2c66531984decaf52e690506bef560d0b8e/Delivery2/Screen%20Shot%202023-03-29%20at%206.18.47%20PM.png"/>
+  </div>
+  
   - [x] Automated pipeline
-  - [x] Branch coverage report 
+  
+  <h3> :test_tube: Running Test.java automatically generates all the files highlighted in blue </h3>
+  <div align="center">
+ <img src="https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/blob/e16625c391748942c9e1ca8486b9e66a7d565792/Delivery3/pipeline.png"/>
+  </div>
+  
   - [x] Testing diverse code cases
 
 </details>

@@ -65,7 +65,9 @@ _100% branch coverage => 100% statement coverage, while 100% statement coverage 
 - [x] Github repository creation
   
       <div align="center">
+        <p>
         <img src="https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/29d7ccda243cebb76c896872c9171a2abd8f4892/Delivery1/repo-qr-code.png" />
+        </p>
       </div>
   ---------------------------------------------------
 
@@ -213,17 +215,90 @@ a comment is added in each code block indicating the block number
   
   <h3> :camera: Input code, Output modified code, text files containing the indeces of covered blocks & branches </h3>
   <div align="center">
- <img src="https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/blob/ebebd2c66531984decaf52e690506bef560d0b8e/Delivery2/Screen%20Shot%202023-03-29%20at%206.18.47%20PM.png"/>
+ <img src="https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/blob/67af59041b0cdd6cc2913b0f58cac186db3635d0/Delivery3/Test%201/output1.png"/>
   </div>
   
+
   - [x] Automated pipeline
   
-  <h3> :test_tube: Running Test.java automatically generates all the files highlighted in blue </h3>
+  <h3> :test_tube: Running "Test.java" automatically generates all the files highlighted in blue </h3>
   <div align="center">
  <img src="https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/blob/e16625c391748942c9e1ca8486b9e66a7d565792/Delivery3/pipeline.png"/>
   </div>
   
   - [x] Testing diverse code cases
+
+### :test_tube: Test 2
+  
+  ```
+    public class Prime {
+      public static void main(String[] args) {
+
+          int low = 20, high = 50;
+
+          while (low < high) {
+              if(checkPrimeNumber(low))
+                  System.out.print(low + " ");
+
+              ++low;
+          }
+      }
+
+      public static boolean checkPrimeNumber(int num) {
+          boolean flag = true;
+
+          for(int i = 2; i <= num/2; ++i) {
+
+              if(num % i == 0) {
+                  flag = false;
+                  break;
+              }
+          }
+
+          return flag;
+      }
+  }
+  ```
+  
+  <h3> :camera: Output HTML </h3>
+  <div align="center">
+  <img src="https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/blob/Clara-Raef-delivery3/Delivery3/Test%202/html2.png"/>
+  </div>
+  
+  <h3> :camera: Input code, Output modified code, text files containing the indeces of covered blocks </h3>
+  <div align="center">
+  <img src="https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/blob/Clara-Raef-delivery3/Delivery3/Test%202/output2.png"/>
+  </div>
+  
+  ### :test_tube: Test 3
+  
+  ```
+    public class PositiveNegative {
+
+    public static void main(String[] args) {
+
+        double number = 12.3;
+
+        if (number < 0.0)
+            System.out.println(number + " is a negative number.");
+
+        else
+            System.out.println(number + " is a positive number.");
+
+    }
+}
+
+  ```
+  
+  <h3> :camera: Output HTML </h3>
+  <div align="center">
+  <img src="[https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/blob/Clara-Raef-delivery3/Delivery3/Test%203/html3.png"/>
+  </div>
+  
+  <h3> :camera: Input code, Output modified code, text files containing the indeces of covered blocks </h3>
+  <div align="center">
+  <img src='https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/blob/Clara-Raef-delivery3/Delivery3/Test%203/output3.png/>
+  </div>
 
 </details>
 

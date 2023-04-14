@@ -107,8 +107,6 @@ public class DynamicCodeAnalyzer extends JavaParserBaseListener {
     
     
 
-}
-
  @Override
     public void enterWhileStatement(JavaParser.WhileStatementContext ctx) {
         // check if there is branch then append the build
@@ -142,6 +140,8 @@ public class DynamicCodeAnalyzer extends JavaParserBaseListener {
     }
 
 
+
+}
 
 
 

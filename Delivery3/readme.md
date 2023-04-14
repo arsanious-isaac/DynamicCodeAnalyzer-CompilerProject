@@ -16,6 +16,12 @@
   </p>
 </div>
 
+## Team Members
+- [Arsanious Isaac Helmy](https://github.com/arsanious-isaac)
+- [Clara Raef Nasry](https://github.com/Clara-Raef)
+- [Mark Magdy Amin](https://github.com/markmagdy822000)
+- [Mina Nagy Latif](https://github.com/MinaNagyLatif)
+- [Youssef Nazeer Tawfik](https://github.com/Yousef-nazeer)
 
 ## :star2: About the Project
  <p>
@@ -129,7 +135,7 @@ _100% branch coverage => 100% statement coverage, while 100% statement coverage 
                      
     ---------------------------------------------------
 
-- [x] A Java program based on Antlr that takes a java file as an input and outputs a modified intermediate java file (injected code):
+- [x] A Java program based on Antlr (USING LISTENER) that takes a java file as an input and outputs a modified intermediate java file (injected code):
 a comment is added in each code block indicating the block number
 <div align="center">
   <h3> :camera: Output file</h3>
@@ -143,18 +149,20 @@ a comment is added in each code block indicating the block number
 <details>
   
   <summary>✓ Delivery 2</summary>
+  - [x] A Java program based on Antlr that takes a java code (input.txt) and injects code into it, generating a modified java file (output1.java). When (output1.java) is run, the visited blocks from this code are detected and stated in a text file (output2.txt).
+
+  ![output](https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/blob/ebebd2c66531984decaf52e690506bef560d0b8e/Delivery2/Screen%20Shot%202023-03-29%20at%206.09.42%20PM.png)
+
+ ![injected output VS. visited blocks](https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/blob/ebebd2c66531984decaf52e690506bef560d0b8e/Delivery2/Screen%20Shot%202023-03-29%20at%206.18.47%20PM.png)
+ </details>
 </details>
 
 <details>
   <summary>✓ Delivery3</summary>
   
-  ### :camera: Screenshots
-
-<div align="center"> 
-  <img src="" />
-</div>
-
-   
-### :test_tube: Running Tests
+  - [] Generate an HTML where red-highlighted code blocks are the ones that have not been visited and the green-highlighted code blocks are the ones that have been visited
+  - [] Automated pipeline
+  - [] Branch coverage report 
+  - [] 3 Java code examples
 
 </details>

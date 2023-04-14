@@ -6,7 +6,8 @@ import java.io.File;  // Import the File class
 
 public class Test {
     
-   
+    static int blockcount = 0;
+    
     static String s = "";
     
     static List<Integer> list_color = new ArrayList<>();
@@ -43,7 +44,11 @@ public class Test {
         Thread.sleep(4000);
         ////////////////////
         
-        
+        Pattern pattern = Pattern.compile("\\bblock\\b", Pattern.CASE_INSENSITIVE);
+        Matcher matcher = pattern.matcher(myListner.rewriter2.getText());
+        blockcount = 0;
+        while (matcher.find()) blockcount++;
+        System.out.println("block count" + blockcount);
         
     static void genNumbers(String fileName, int j) throws IOException {
         CharStream in = CharStreams.fromFileName("textoutput/" + fileName);

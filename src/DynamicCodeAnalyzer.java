@@ -94,6 +94,14 @@ public class DynamicCodeAnalyzer extends JavaParserBaseListener {
             rewriter2.insertAfter(ctx.statement(0).getStop(), "}");
         }
         else rewriter.insertAfter(ctx.statement(0).getStart(), "\n\t\t" + build.toString() + "\n\t\t");
+        if(ctx.getChild(4).getText().charAt(0) != '{') {
+            counter++;
+            rewriter.insertBefore(ctx.statement(1).getStart(),
+                    "{//block " + (counter) + "\n\t\t  blocks.println(\"block #" + counter + " is visited\");\n");
+            rewriter.insertAfter(ctx.statement(1).getStop(), "}");
+            rewriter2.insertBefore(ctx.statement(1).getStart(), "{//block " + (counter)+ "\n\t\t");
+            rewriter2.insertAfter(ctx.statement(1).getStop(), "}");
+        }
 
         }
     

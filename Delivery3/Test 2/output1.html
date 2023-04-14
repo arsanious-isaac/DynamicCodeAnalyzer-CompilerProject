@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>compiler</title>
+  <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body style="background-color : LimeGreen;"><pre><div>public class Prime {
+<div id="b1">    public static void main(String[] args) {//block 1
+
+        int low = 20, high = 50;
+
+<div id="b2">        while (low < high) {//block 2
+            if(checkPrimeNumber(low))
+<div id="b3">                {//block 3
+		System.out.print(low + " ");}</div>
+
+            ++low;
+        }</div>
+    }</div>
+
+<div id="b4">    public static boolean checkPrimeNumber(int num) {//block 4
+        boolean flag = true;
+
+<div id="b5">        for(int i = 2; i <= num/2; ++i) {//block 5
+
+<div id="b6">            if(num % i == 0) {//block 6
+                flag = false;
+                break;
+            }</div>
+        }</div>
+
+        return flag;
+    }</div>
+}</div>
+</pre>
+</body>	
+</html>

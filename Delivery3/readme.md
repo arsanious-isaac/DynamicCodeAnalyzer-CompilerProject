@@ -12,7 +12,6 @@
   </a>
   </p>
   <p>
-    ## :wave: Contributors
     <a href="https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/graphs/contributors">
       <img src="https://contrib.rocks/image?repo=Clara-Raef/DynamicCodeAnalyzer-CompilerProject" />
     </a>

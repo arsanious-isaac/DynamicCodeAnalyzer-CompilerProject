@@ -1,0 +1,30 @@
+class main {
+
+    public static void main(String[] args) {
+
+        int low = 20, high = 50;
+
+        while (low < high) {
+            if(checkPrimeNumber(low))
+                System.out.print(low + " ");
+
+            ++low;
+        }
+    }
+
+    public static boolean checkPrimeNumber(int num) {
+        boolean flag = true;
+
+        for(int j = 2; j <= num/2; ++j) {
+
+            if(false || true || false) {
+                flag = false;
+                break;
+            }
+		if(false){
+		flag = true;}
+        }
+
+        return flag;
+    }
+}

@@ -30,24 +30,23 @@ public class DynamicCodeAnalyzer extends JavaParserBaseListener {
 
 
 
-    @Override public void enterBlock(JavaParser.BlockContext ctx) {
+     @Override public void enterBlock(JavaParser.BlockContext ctx) {
         int start = ctx.getStart().getTokenIndex();
         rewriter.insertAfter(start,"//block " + (counter+1));
+        rewriter2.insertAfter(start,"//block " + (counter+1));
 
 
         if (counter==0){
-            rewriter.insertAfter(start,"\n int[] intArray = new int[20]; \n" + "int c = 0; \n");
+            rewriter.insertAfter(start,
+                    "\n  blocks = new PrintWriter(\"textoutput/output1blocks.txt\");\n" +
+                    "\n  branches = new PrintWriter(\"textoutput/output1branches.txt\");\n");
+            rewriter.insertBefore(start,"throws FileNotFoundException");
             int end = ctx.getStop().getTokenIndex();
-            rewriter.insertBefore(end,
-                    "\n PrintWriter out = new PrintWriter(\"output2.txt\");\n" +
-                    " for(int i=0 ; i < c; i++){\n" +
-                    "        out.println(\"block #\"+ intArray[i] + \" is visited\");\n" +
-                    " }\n" +
-                    "        out.close();\n");
-
+            rewriter.insertBefore(end, " blocks.close();\n" + "branches.close();\n");
         }
+
         counter++;
-        rewriter.insertAfter(start, "\n\t\t intArray [c++] ="+ counter + ";");
+        rewriter.insertAfter(start, "\n\t\t blocks.println(\"block #" + counter + " is visited\");\n");
 
     }
 

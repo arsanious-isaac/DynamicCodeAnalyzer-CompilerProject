@@ -63,7 +63,7 @@ _100% branch coverage => 100% statement coverage, while 100% statement coverage 
   - Custom labels were added to Java Parser later in Delivery 3
   
 - [x] Testing the grammar & showing the parse tree using ANTLR with Intelli-J
-    ---------------------------------------------------
+
   - :test_tube: Simple If condition program that states Success/Failure for a certain grade
     ```
        public class IfCond {

@@ -1,8 +1,6 @@
 <div align="center">
   <h1>Dynamic Java Code Analyzer</h1>
-  <p>
-  A dynamic code analyzer for Java Programming Language to generate statement and branches code coverage reports.
-  </p>  
+  <h3>A group project for Compiler Course</h3>
   <p>
   <a href="https://github.com/Louis3797/awesome-readme-template/graphs/contributors">
     <img src="https://img.shields.io/badge/contriburtors-5-green" alt="contributors" />
@@ -20,6 +18,9 @@
 
 
 ## :star2: About the Project
+ <p>
+  This is a dynamic code analyzer for Java Programming Language to generate statement and branches code coverage reports.
+ </p>
 
 **Statement coverage VS. Branch coverage**
 
@@ -34,6 +35,13 @@ if(a || b || (c && d && !e)) {
 - **Branch Coverage:** to test the cases when a is true, when a is false but b is true, when a and b are false but c and d are true and e is false, and so on.
 
 _100% branch coverage => 100% statement coverage, while 100% statement coverage does not imply 100% branch coverage_
+
+## System Flow
+<div align="center">
+  <p>
+      <img src="https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/blob/a37dbdb7e06cc7c6f18c848b9164ab0bd0ac0dea/Delivery3/flowchart.png" />
+  </p>
+</div>
 
 ## :gear: Built With
 *Java

@@ -297,7 +297,7 @@ a comment is added in each code block indicating the block number
   
   <h3> :camera: Input code, Output modified code, text files containing the indeces of covered blocks </h3>
   <div align="center">
-  <img src='https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/blob/Clara-Raef-delivery3/Delivery3/Test%203/output3.png/>
+  <img src='https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/blob/Clara-Raef-delivery3/Delivery3/Test%203/output3.png'/>
   </div>
 
 </details>

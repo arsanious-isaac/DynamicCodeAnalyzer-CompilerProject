@@ -51,6 +51,10 @@ _100% branch coverage => 100% statement coverage, while 100% statement coverage 
 ## :compass: Roadmap
 <details>
   <summary>✓ Delivery 1</summary>
+      - [x] Github repository creation
+      <div align="center">
+        ![Repository QR Code](https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/29d7ccda243cebb76c896872c9171a2abd8f4892/Delivery1/repo-qr-code.png)
+      </div>
 </details>
 
 <details>

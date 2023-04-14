@@ -57,11 +57,14 @@ _100% branch coverage => 100% statement coverage, while 100% statement coverage 
       <div align="center">
         <img src="https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/29d7ccda243cebb76c896872c9171a2abd8f4892/Delivery1/repo-qr-code.png" />
       </div>
-  
+  ---------------------------------------------------
+
 - [x] ANTLR Java Lexer & Parser used
   - Credits to https://github.com/antlr/grammars-v4/tree/master/java/java
   - Custom labels were added to Java Parser later in Delivery 3
   
+  ---------------------------------------------------
+
 - [x] Testing the grammar & showing the parse tree using ANTLR with Intelli-J
 
   - :test_tube: Simple If condition program that states Success/Failure for a certain grade
@@ -83,6 +86,7 @@ _100% branch coverage => 100% statement coverage, while 100% statement coverage 
    ![If condition test](https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/4415d9383c010d8b1f468a8279a206429e6343ad/Delivery1/test-ifcond.png)
      
    ![If condition Parse Tree](https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/f636bf47fb7fd3762b5fd72887ca8aa81e6416ad/Delivery1/parseTree%20--Ifcondition.png)
+  
     ---------------------------------------------------
 
   - :test_tube: Simple While loop that prints value of variable k of type integer while it's less than or equal to 10 
@@ -109,6 +113,7 @@ _100% branch coverage => 100% statement coverage, while 100% statement coverage 
      ![While loop fault test](https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/4415d9383c010d8b1f468a8279a206429e6343ad/Delivery1/test-whileloopfault.png)
      
      ![While loop fault Parse Tree](https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/392862f1ec731e4dd1d90bc6c463213d5d79b394/Delivery1/parseTree-whileloopfault.png)
+                     
     ---------------------------------------------------
 
  - :camera: String Operation Parse Tree
@@ -116,6 +121,22 @@ _100% branch coverage => 100% statement coverage, while 100% statement coverage 
      ![String Operation test](https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/main/Delivery1/Code%2BParseTree-StringOperation.png)
          
      ![String Operation test](https://github.com/Clara-Raef/Dynamic-Code-Analyzer--Compiler-Course-Project/blob/main/Delivery1/parseTree--StringOperations.png)
+                     
+    ---------------------------------------------------
+                     
+- [x] Starting rule of the grammar:
+      ****compilationUnit****
+                     
+    ---------------------------------------------------
+
+- [x] A Java program based on Antlr that takes a java file as an input and outputs a modified intermediate java file (injected code):
+a comment is added in each code block indicating the block number
+<div align="center">
+ ### :camera: Output file
+ <img src="https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/blob/b5e24ecada407949e1561310abf6004abeefec03/Delivery1/Screen%20Shot%202023-03-29%20at%205.12.49%20PM.png"/>
+  </div>
+  ### :camera: Input file VS. Modified output file
+  ![input-outputCompare](https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/blob/b5e24ecada407949e1561310abf6004abeefec03/Delivery1/Screen%20Shot%202023-03-29%20at%205.13.48%20PM.png)
   </details>
 
 <details>

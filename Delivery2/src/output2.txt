@@ -1,5 +1,0 @@
-block #1 is visited
-block #2 is visited
-block #5 is visited
-block #6 is visited
-block #7 is visited

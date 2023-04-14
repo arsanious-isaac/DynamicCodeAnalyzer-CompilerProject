@@ -2,22 +2,48 @@
   <h1>Dynamic Java Code Analyzer</h1>
   <p>
   A dynamic code analyzer for Java Programming Language to generate statement and branches code coverage reports.
-  </p>
-  
-<p>
+  </p>  
+  <p>
   <a href="https://github.com/Louis3797/awesome-readme-template/graphs/contributors">
     <img src="https://img.shields.io/badge/contriburtors-5-green" alt="contributors" />
   </a>
   <a href="https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/commits/main">
     <img src="https://img.shields.io/badge/last%20commit-april%202023-blue" alt="last update" />
   </a>
-</p>
+  </p>
+  <p>
   ## :wave: Contributors
-<a href="https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Clara-Raef/DynamicCodeAnalyzer-CompilerProject" />
-</a>
-
+  <a href="https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=Clara-Raef/DynamicCodeAnalyzer-CompilerProject" />
+  </a>
+  </p>
 </div>
+
+
+## :star2: About the Project
+
+**Statement coverage VS. Branch coverage**
+
+```
+if(a || b || (c && d && !e)) {
+    test1 = true;
+} else {
+    test2 = false;
+}
+```
+- **Statement Coverage:** when our code says that test1 and test2 are hit.
+- **Branch Coverage:** to test the cases when a is true, when a is false but b is true, when a and b are false but c and d are true and e is false, and so on.
+
+_100% branch coverage => 100% statement coverage, while 100% statement coverage does not imply 100% branch coverage_
+
+### Built With
+
+* [![Java][Java]]
+* [![IntelliJ][]]
+* [![ANTLR][Angular.io]]
+* [![HTML][Svelte.dev]]
+* [![CSS][Laravel.com]]
+
 
 
 <!-- Roadmap -->
@@ -27,24 +53,6 @@
 * [x] Delivery 2
 * [x] Delivery 3
 
-<!-- Table of Contents -->
-# :notebook_with_decorative_cover: Table of Contents
-
-- [About the Project](#star2-about-the-project)
-- [Usage](#eyes-usage)
-- [Roadmap](#compass-roadmap)
-- [Contributing](#wave-contributing)
-  * [Code of Conduct](#scroll-code-of-conduct)
-- [FAQ](#grey_question-faq)
-- [License](#warning-license)
-- [Contact](#handshake-contact)
-- [Acknowledgements](#gem-acknowledgements)
-
-  
-
-<!-- About the Project -->
-## :star2: About the Project
-
 
 <!-- Screenshots -->
 ### :camera: Screenshots
@@ -53,19 +61,6 @@
   <img src="https://placehold.co/600x400?text=Your+Screenshot+here" alt="screenshot" />
 </div>
 
-
-
-<!-- Features -->
-### :dart: Features
-
-- Feature 1
-- Feature 2
-- Feature 3
-
-
-
-<!-- Getting Started -->
-## 	:toolbox: Getting Started
 
 <!-- Prerequisites -->
 ### :bangbang: Prerequisites
@@ -111,5 +106,4 @@ function App() {
 }
 ```
 
-
-
+[Java]: https://img.shields.io/badge/Java-20232A?style=for-the-badge&logo=java&logoColor=61DAFB

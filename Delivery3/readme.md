@@ -132,11 +132,12 @@ _100% branch coverage => 100% statement coverage, while 100% statement coverage 
 - [x] A Java program based on Antlr that takes a java file as an input and outputs a modified intermediate java file (injected code):
 a comment is added in each code block indicating the block number
 <div align="center">
- ### :camera: Output file
+  <h3> :camera: Output file</h3>
  <img src="https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/blob/b5e24ecada407949e1561310abf6004abeefec03/Delivery1/Screen%20Shot%202023-03-29%20at%205.12.49%20PM.png"/>
+  
+  <h3> :camera: Input file VS. Modified output file </h3>
+ <img src="https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/blob/b5e24ecada407949e1561310abf6004abeefec03/Delivery1/Screen%20Shot%202023-03-29%20at%205.13.48%20PM.png"/>
   </div>
-  ### :camera: Input file VS. Modified output file
-  ![input-outputCompare](https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/blob/b5e24ecada407949e1561310abf6004abeefec03/Delivery1/Screen%20Shot%202023-03-29%20at%205.13.48%20PM.png)
   </details>
 
 <details>

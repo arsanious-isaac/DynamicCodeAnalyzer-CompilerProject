@@ -12,10 +12,10 @@
   </a>
   </p>
   <p>
-  ## :wave: Contributors
-  <a href="https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=Clara-Raef/DynamicCodeAnalyzer-CompilerProject" />
-  </a>
+    ## :wave: Contributors
+    <a href="https://github.com/Clara-Raef/DynamicCodeAnalyzer-CompilerProject/graphs/contributors">
+      <img src="https://contrib.rocks/image?repo=Clara-Raef/DynamicCodeAnalyzer-CompilerProject" />
+    </a>
   </p>
 </div>
 
@@ -36,17 +36,13 @@ if(a || b || (c && d && !e)) {
 
 _100% branch coverage => 100% statement coverage, while 100% statement coverage does not imply 100% branch coverage_
 
-### Built With
-
-* [![Java][Java]]
-* [![IntelliJ][]]
-* [![ANTLR][Angular.io]]
-* [![HTML][Svelte.dev]]
-* [![CSS][Laravel.com]]
+## :gear: Built With
+*Java
+*IntelliJ
+*ANTLR plug-in
+*CSS & HTML
 
 
-
-<!-- Roadmap -->
 ## :compass: Roadmap
 
 * [x] Delivery 1
@@ -54,7 +50,6 @@ _100% branch coverage => 100% statement coverage, while 100% statement coverage 
 * [x] Delivery 3
 
 
-<!-- Screenshots -->
 ### :camera: Screenshots
 
 <div align="center"> 
@@ -62,17 +57,9 @@ _100% branch coverage => 100% statement coverage, while 100% statement coverage 
 </div>
 
 
-<!-- Prerequisites -->
-### :bangbang: Prerequisites
-
-This project uses Yarn as package manager
-
-```bash
- npm install --global yarn
-```
 
 <!-- Installation -->
-### :gear: Installation
+###  Installation
 
 Install my-project with npm
 
@@ -105,5 +92,3 @@ function App() {
   return <Component />
 }
 ```
-
-[Java]: https://img.shields.io/badge/Java-20232A?style=for-the-badge&logo=java&logoColor=61DAFB
